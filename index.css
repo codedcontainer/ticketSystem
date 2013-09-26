@@ -1,0 +1,23 @@
+#accordion div{
+	display: none;
+}
+.ui-state-default .ui-icon{
+	display: none!important;
+}
+#container .ui-state-default {
+	width: 50%;
+	float:right;
+	margin-right: 10%;
+}
+ul#sortable{list-style-type: none;}
+.content { padding-left: 20px;}
+
+#expand{
+	float:left;
+	margin-top: 22px;
+	padding: 0 10px 0 10px;
+	}
+input{ margin-left: 10px;
+margin-top: 24px; margin-right: 5px; float: left;}
+.content { display: none;}
+

@@ -2,14 +2,29 @@
 <head>
 	<title> Ticket System </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<link type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+	<link type="text/css" rel="stylesheet" href="index.css"/>
+	<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="jquery.jeditable.js"></script>
 </head>
 <body>
 	<div id="container">
-
+		<ul id="sortable" class="ui-sortable">
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+			<span id="expand">&#9650;</span><input type="checkbox" name="check"/><h3>Title</h3>
+			<div class="content 0">
+				
+				<p>This is some content!</p>
+				
+			</div>
+			
+		</li>
+		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+			
+		</li>
+	</ul>
 	</div>
 </body>
 
