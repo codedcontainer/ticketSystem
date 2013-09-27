@@ -15,7 +15,7 @@ The Databse has the following tables which support the content generated in the 
 SYNOPSIS
 ========
 
-There will be three sections to the application.
+There will be three sections to the application.<br/>
 A. User settings<br/>
 B. Project List<br/>
 C. Task List<br/>
