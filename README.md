@@ -1,11 +1,11 @@
 ticketSystem
 ============
 
-Ticket system that allows users to fill out troublesome inquires concerning projects. These tickets can be assigned for a multiple number of users. New users can be added to a project.<br/><br/>
+Ticket system that allows users to fill out troublesome inquires concerning projects. These tickets can be assigned for a multiple number of users. New users can be added to a project.
 
 DATABASE
 ========
-The Databse has the following tables which support the content generated in the application.<br/><br/>
+The Databse has the following tables which support the content generated in the application.
 
 1. user_id | UN | PASS | MD5 | Admin_bl<br/>
 2. prj_id | prj_name<br/>
