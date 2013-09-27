@@ -16,7 +16,7 @@ SYNOPSIS
 ========
 
 There will be three sections to the application.
-A. User settings
+A. User settings<br/>
 B. Project List
 C. Task List
 
