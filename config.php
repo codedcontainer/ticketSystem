@@ -7,6 +7,9 @@ $dbName = "ticketSystem"; // name of the database
 $un = "root"; //username
 $pass = "root"; //password
 
+//Get the post type from Javascript file (index.js)
+$db_test = isset($_POST['db_test']);
+
 $con = mysqli_connect($hn, $un, $pass);
 if($con == true)
 {
@@ -43,10 +46,11 @@ if($con == true)
 				tsk_order TINYINT(1) NOT NULL,
 				tsk_title CHAR(50) NOT NULL,
 				tsk_cmt CHAR(250)
-			)");		
+			)");
+			if($db_test == 1) {print "1";}
 }
 else
 {
-	print "Could not connect to DB";
+	if($db_test == 1) {print "0";}
 }
 ?>
