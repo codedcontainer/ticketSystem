@@ -43,10 +43,7 @@ if($con == true)
 				tsk_order TINYINT(1) NOT NULL,
 				tsk_title CHAR(50) NOT NULL,
 				tsk_cmt CHAR(250)
-			)");
-			
-			
-			
+			)");		
 }
 else
 {
