@@ -4,20 +4,48 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link type="text/css" rel="stylesheet" href="index.css"/>
 	<link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+	<!-- Font Awesome -->
+	<link type="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.css"/>
+	<!--[if IE 7]>
+  	<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+	<![endif]-->
+	<!-- ===================== SCRIPTS ======================= -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="index.js"></script>
 	<script type="text/javascript" src="jquery.jeditable.js"></script>
+
 </head>
 <body>
+	<div id="lightsout"></div>
+		<div id="lightbox"></div>
+
 	<div id="container">
+		<!-- ==== Lightbox Form ======-->
+		
+
+		<!-- =========================-->
+
+		<div id="admin-bar">
+		</div>
+		<div id="projects">
+		<i class="icon-plus-sign icon-2x"></i>
+		<div id="projects-list">
+			<ul>
+				<li>Project 1 </li>
+				<li>Project 2</li>
+				<li>Project 3</li>
+				<li>Project 4</li>
+				<li>Project 5</li>
+			</ul>
+		</div>
+	</div>
+	<div id="tasks">
 		<ul id="sortable" class="ui-sortable">
 		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
 			<span id="expand">&#9650;</span><input type="checkbox" name="check"/><h3>Title</h3>
 			<div class="content 0">
-				
 				<p>This is some content!</p>
-				
 			</div>
 			
 		</li>
@@ -26,6 +54,7 @@
 		</li>
 	</ul>
 	</div>
+</div>
 </body>
 
 
