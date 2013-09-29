@@ -1,15 +1,8 @@
 #accordion div{ display: none; }
 .ui-state-default .ui-icon{ display: none!important; }
 #container .ui-state-default { }
-#tasks{
-	width: 50%;
-	float:right;
-	margin-right: 10%;
-}
-#projects{
-	width: 150px;
-	float: left;
-}
+#tasks{ width: 50%; float:right; margin-right: 10%; }
+#projects{ width: 150px; float: left; }
 #lightsout{
 	background-color: black;
 	position: absolute;
@@ -28,7 +21,7 @@
 	height: 500px;
 	width: 500px;
 	position: absolute;
-	z-index: 99;
+	z-index: 2;
 	background-color: white;
 	display: none;
 }
@@ -51,4 +44,9 @@ ul#sortable{list-style-type: none;}
 input{ margin-left: 10px;
 margin-top: 24px; margin-right: 5px; float: left;}
 .content { display: none;}
+#frm_prj, #frm_tsk{
+	position: absolute;
+	z-index: 3;
+	display: none;
+}
 

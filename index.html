@@ -14,18 +14,32 @@
 	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script type="text/javascript" src="index.js"></script>
 	<script type="text/javascript" src="jquery.jeditable.js"></script>
-
 </head>
 <body>
 	<div id="lightsout"></div>
-		<div id="lightbox"></div>
-
+		<div id="lightbox">
+			<form id="frm_prj">
+				<fieldset>Name of Project:<input type="text"/></fieldset>
+				<button>Submit</button>
+			</form>
+			<form id="frm_tsk">
+				<fieldset>Title:</fieldset>
+				<fieldset>Comment (optional):</fieldset>
+				<fieldset>Priority:
+					<select name="prty">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</fieldset>
+				<button>Submit</button>
+			</form>
+		</div>
 	<div id="container">
 		<!-- ==== Lightbox Form ======-->
-		
-
 		<!-- =========================-->
-
 		<div id="admin-bar">
 		</div>
 		<div id="projects">
@@ -47,16 +61,11 @@
 			<div class="content 0">
 				<p>This is some content!</p>
 			</div>
-			
 		</li>
 		<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
-			
 		</li>
 	</ul>
 	</div>
 </div>
 </body>
-
-
-
 </html>
