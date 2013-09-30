@@ -1,12 +1,10 @@
 $(document).ready(function()
 {
 	var config_bool;
-
 	tsk_sortable();
 	tsk_toggle();
 	projectBox();
 	config(); // Returns Bool //Make AJAX request to config.php and make sure everything has been set up
-
 	function tsk_sortable()
 	{
     	$( "#sortable" ).sortable();
@@ -37,14 +35,19 @@ $(document).ready(function()
 	{
 		var dataBool;
 		var db_test;
-		$.ajax({ url: 'config.php',
+		$.ajax({asyc: false,
+				url: 'config.php',
+				dataType: "text",
 				data:{db_test:1},
 				type: "POST",
-				success: function(data)
-				{
-					//return the data value to global variable.
-				}
+				success: dataStuff
 		});
+		function dataStuff(data)
+		{
+			dataBool = data;
+
+		}
+		console.log(dataBool);
 	}
 	function projectBox()
 	{
