@@ -47,6 +47,13 @@ margin-top: 24px; margin-right: 5px; float: left;}
 #frm_prj, #frm_tsk{
 	position: absolute;
 	z-index: 3;
+	margin-top: 25%;
+	right: 0;
+	left: 0;
+	margin: 25% auto auto auto;
+	width: 50%;
+}
+#frm_tsk{
 	display: none;
 }
-
+#frm_prj{display: none;}

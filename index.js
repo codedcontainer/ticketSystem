@@ -6,7 +6,10 @@ $(document).ready(function()
 	tsk_toggle();
 	projectBox();
 	config(); // Returns Bool //Make AJAX request to config.php and make sure everything has been set up
-	console.log(dataBool);
+	if(dataBool == 1)
+	{
+		
+	}
 
 	function tsk_sortable()
 	{
@@ -34,6 +37,7 @@ $(document).ready(function()
 		  	$(this).data("clicks", !clicks);
 		});
 	}	
+	// Check to see if there has been a connection to the database and that it has been set up.
 	function config()
 	{
 		
@@ -48,8 +52,6 @@ $(document).ready(function()
 					dataBool = data;
 				}
 		});
-		
-		console.log(dataBool);
 	}
 	function projectBox()
 	{
@@ -62,7 +64,9 @@ $(document).ready(function()
 				'width': document.height,
 				'height': document.width
 			});
+			//$('form #frm_prj').css({'display':'block'});
 		});
+			$('#frm_prj').show();
 			$('#lightsout, #lightbox').show();
 		});
 
