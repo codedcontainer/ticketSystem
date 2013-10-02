@@ -8,9 +8,33 @@ $(document).ready(function()
 	config(); // Returns Bool //Make AJAX request to config.php and make sure everything has been set up
 	if(dataBool == 1)
 	{
-		
+		prj_create();
 	}
+	function prj_create()
+	{
+		$('#frm_prj .submit').click(function(){
+			var prjName = $('#frm_prj input').val();
+			if(prjName == "")
+			{
+				jQuery('.empty').text('You must submit a project name');
+			}
+			else
+			{
+				$.ajax({async: false,
+					url: 'prjSubmit.php',
+					data:{prjName: prjName},
+					type: "POST",
+					success: function(data)
+					{
+						console.log(data);
+					}
+				});
 
+			}
+
+
+		});
+	}
 	function tsk_sortable()
 	{
     	$( "#sortable" ).sortable();
@@ -40,10 +64,9 @@ $(document).ready(function()
 	// Check to see if there has been a connection to the database and that it has been set up.
 	function config()
 	{
-		
 		var db_test;
 		$.ajax({async: false,
-				url: 'config.php',
+				url: 'dbtest.php',
 				dataType: "text",
 				data:{db_test:1},
 				type: "POST",
